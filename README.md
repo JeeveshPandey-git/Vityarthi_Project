@@ -19,7 +19,7 @@ This is written in pure Python 3 and only uses the built-in random module. That 
 python Multi_player_number_game.py
 ```
 (Just replace Multi_player_number_game.py if you rename the file!)
-##  How a match goes down
+##  How the game runs
  * Setup: The game asks how many people are playing and gets everyone's name.
  * The Secret: It secretly locks in a number from 1 to 100.
  * The Hunt: You take turns guessing. Pay attention to the hints!
