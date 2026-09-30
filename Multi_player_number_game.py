@@ -1,7 +1,7 @@
 import random
 
 def start_game():
-    """Initializes the game by getting the number of players and their names."""
+    #asks for input for number of players and player names
     print("===================================================")
     print("🎯 MULTI-PLAYER MULTI-ROUND NUMBER GUESSING GAME 🎯")
     print("===================================================")
@@ -23,7 +23,7 @@ def start_game():
     return players
 
 def run_game_loop(players):
-    """Manages the rounds of the game."""
+    #function for the management of the game rounds
     N_Players = len(players)
     scores = [0] * N_Players
     round_number = 1
@@ -98,14 +98,14 @@ def run_game_loop(players):
     return scores
 
 def display_final_scoreboard(players, scores):
-    """Displays the final scores and thanks the players."""
+    #Displays the final scores and returns "\nThanks for playing!" so that it doesn't show none on the terminal after program is done running
     print("\n=========================================")
     print("🏁 FINAL SCOREBOARD 🏁")
 
     final_standings = sorted(zip(scores, players), reverse=True)
 
-    for rank, (score, player) in enumerate(final_standings, 1):
-        print(f" {rank}. {player} - {score} win(s)")
+    for rank, (s, p) in enumerate(final_standings, 1):
+        print(f" {rank}. {p} - {s} win(s)")
     return ("\nThanks for playing!")
 
 def NumGame():
