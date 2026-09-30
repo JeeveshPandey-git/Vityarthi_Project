@@ -111,6 +111,6 @@ def display_final_scoreboard(players, scores):
 def NumGame():
     players = start_game()
     scores = run_game_loop(players)
-    display_final_scoreboard(players, scores)
+    return display_final_scoreboard(players, scores)
 
 print(NumGame())
